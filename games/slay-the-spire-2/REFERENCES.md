@@ -32,6 +32,6 @@ support the compatibility interpretation in this entry; they are not
 results reported by the upstream issue authors. No raw logs or private
 validation artifacts are included.
 
-The repository's original documentation is covered by the [MIT License](../../LICENSE).
+The repository's original documentation is covered by [CC BY 4.0](../../LICENSE-DOCS).
 Upstream software, documentation, and game assets retain their respective
 rights and licenses.

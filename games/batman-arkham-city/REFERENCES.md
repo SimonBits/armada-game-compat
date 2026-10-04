@@ -27,4 +27,4 @@ The package's contribution is a scoped utility and the Armada reproduction/integ
 
 ## Project license
 
-- [Open Source Initiative: MIT License](https://opensource.org/license/mit) — reference for the approved license for this utility's original code, tests and documentation. The supplied notice is Copyright (c) 2026 SimonBits; see the repository's [LICENSE](../../LICENSE). Upstream material retains its own ownership and licenses.
+- [Open Source Initiative: MIT License](https://opensource.org/license/mit) — reference for the license for this utility's original code and tests. The supplied notice is Copyright (c) 2026 SimonBits; see the repository's [LICENSE](../../LICENSE). Original documentation uses [CC BY 4.0](../../LICENSE-DOCS). Upstream material retains its own ownership and licenses.

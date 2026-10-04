@@ -33,7 +33,8 @@ The **Source** field distinguishes:
 Game directories under `games/` may contain user-facing instructions,
 validation results, technical investigation notes, upstream/community
 references, and helper scripts where required. Contents vary by game entry.
-The root `LICENSE` applies to this repository's original material.
+Licensing is divided between original software/code and original documentation;
+see [License](#license).
 
 ## Scope
 
@@ -47,5 +48,14 @@ and project-specific findings are attributed separately in each entry.
 
 ## License
 
-[MIT License](LICENSE) — Copyright (c) 2026 SimonBits.
-Upstream software, documentation, and game assets retain their respective rights and licenses.
+- Original software/code in this repository is licensed under the [MIT License](LICENSE) — Copyright (c) 2026 SimonBits.
+- Original documentation authored for this repository is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE-DOCS).
+
+These categories apply to current and future original repository material.
+Third-party/upstream software, documentation, game assets, trademarks, names,
+and referenced or quoted materials remain subject to their respective rights
+and licenses; this licensing structure does not relicense them.
+
+Earlier public revisions remain available under the license terms under which
+they were originally released. This change does not revoke or remove rights
+already granted under MIT for those revisions.

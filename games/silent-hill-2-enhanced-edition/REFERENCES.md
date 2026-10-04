@@ -23,5 +23,5 @@ title, and demonstration context are supplied by the tester.
 
 No game files, preconfigured packages, redistributed assets, or game-download
 links are included. The repository's original documentation uses the
-[MIT License](../../LICENSE); the game, enhancement project, video, and
+[CC BY 4.0](../../LICENSE-DOCS); the game, enhancement project, video, and
 upstream documentation retain their respective rights and licenses.

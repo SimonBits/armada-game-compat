@@ -43,4 +43,4 @@ To undo the launch-option change, restore the text you saved. The script never e
 
 The script requires an existing initialized Proton prefix and a recognized registry layout. Missing/ambiguous prefixes, redirected/shared layouts, and unsupported formats are refused; it never falls back to `~/.wine`. Flatpak Steam is outside the validated scope. It does not delete prefixes, repair the AMD installer, change game files, or stop services.
 
-See [technical notes and validation](TECHNICAL-NOTES.md) and [upstream references and attribution](REFERENCES.md). Licensed under the repository's [MIT License](../../LICENSE).
+See [technical notes and validation](TECHNICAL-NOTES.md) and [upstream references and attribution](REFERENCES.md). Original code and tests use the repository's [MIT License](../../LICENSE); original documentation uses [CC BY 4.0](../../LICENSE-DOCS).

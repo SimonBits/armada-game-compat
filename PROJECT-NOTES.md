@@ -120,3 +120,31 @@ Preferred order for substantial new technical findings:
 5. Bilibili.
 
 Small documentation-only updates do not need to follow this sequence mechanically.
+
+## Licensing
+
+Apply the following categories to current and future original repository
+material:
+
+- **Software/code: [MIT License](LICENSE).** This includes Python utilities,
+  helper scripts, synthetic tests, and future original source code. Preserve
+  the notice: Copyright (c) 2026 SimonBits.
+- **Documentation: [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE-DOCS).**
+  This includes README files, PROJECT-NOTES.md, TECHNICAL-NOTES.md,
+  REFERENCES.md, compatibility records, and original investigation/validation
+  documentation authored for this repository.
+
+Maintainers and AI/automation sessions must preserve this distinction: do not
+apply MIT to all documentation or CC BY 4.0 to source code. Use CC BY 4.0
+without adding NonCommercial or NoDerivatives restrictions.
+
+These licenses apply only to this repository's original material. They do not
+relicense FEX, Wine, Proton, Steam/Valve, Armada, or Silent Hill 2 Enhanced
+Edition project material; game software/assets; or quoted or referenced
+third-party material. Preserve upstream attribution and existing notices.
+Third-party software, documentation, game assets, trademarks, names, and
+referenced materials retain their respective rights and licenses.
+
+Earlier public revisions remain available under the license terms under which
+they were originally released. This change does not revoke or remove rights
+already granted under MIT for those revisions.
