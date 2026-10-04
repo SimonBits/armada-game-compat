@@ -20,11 +20,13 @@ Each game entry records:
 | --- | ---: | --- | --- | --- | --- |
 | [Batman: Arkham City GOTY](games/batman-arkham-city/) | 200260 | AMD prerequisite hang + x87 startup crash | Workaround available | AYN Odin 3, Retroid Pocket 6 | Investigation + upstream |
 | [Slay the Spire 2](games/slay-the-spire-2/) | 2868840 | Native Linux/CoreCLR startup crash under FEX | Workaround available | AYN Odin 3, Retroid Pocket 6 | Investigation + upstream |
+| [Silent Hill 2 Enhanced Edition](games/silent-hill-2-enhanced-edition/) | Non-Steam | Non-Steam launch / DLL override configuration | Working configuration | AYN Odin 3 | Armada validation |
 
 The **Source** field distinguishes:
 
 - **Investigation + upstream**: the Armada-specific problem was investigated and the workaround integrated here; relevant existing upstream knowledge is credited in the game entry.
 - **Upstream/community workaround, Armada validated**: the workaround already existed elsewhere; this repository records independent real-device validation on Armada OS and credits the original source.
+- **Armada validation**: a working configuration independently tested on Armada; no original upstream bug/fix discovery is claimed.
 
 ## Repository Structure
 
