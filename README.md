@@ -1,39 +1,49 @@
 # Armada Game Compatibility
 
-Real-device tested game compatibility notes, startup fixes, and workarounds for **Armada OS on ARM64 handhelds**.
+Real-device tested game compatibility notes, startup fixes, and workarounds
+for Armada OS on ARM64 handhelds.
 
-Each entry documents the observed issue, tested workaround, validation devices, and known limitations. Results are based on actual testing and do not guarantee identical behavior across all devices or Armada OS versions.
+Entries cover both original project investigations and existing upstream or
+community workarounds independently validated on Armada, with attribution to
+the original sources.
+
+Each game entry records:
+
+- The observed compatibility problem.
+- The tested workaround.
+- The validation devices.
+- Known limitations.
 
 ## Games
 
-| Game | Steam App ID | Status | Validated Devices |
-| --- | ---: | --- | --- |
-| Batman: Arkham City GOTY | 200260 | Workaround available | AYN Odin 3, Retroid Pocket 6 |
+| Game | Steam App ID | Issue | Status | Validated Devices | Source |
+| --- | ---: | --- | --- | --- | --- |
+| [Batman: Arkham City GOTY](games/batman-arkham-city/) | 200260 | AMD prerequisite hang + x87 startup crash | Workaround available | AYN Odin 3, Retroid Pocket 6 | Investigation + upstream |
+| [Slay the Spire 2](games/slay-the-spire-2/) | 2868840 | Native Linux/CoreCLR startup crash under FEX | Workaround available | AYN Odin 3, Retroid Pocket 6 | Investigation + upstream |
+
+The **Source** field distinguishes:
+
+- **Investigation + upstream**: the Armada-specific problem was investigated and the workaround integrated here; relevant existing upstream knowledge is credited in the game entry.
+- **Upstream/community workaround, Armada validated**: the workaround already existed elsewhere; this repository records independent real-device validation on Armada OS and credits the original source.
 
 ## Repository Structure
 
-Each game has its own directory under `games/`.
-
-For example:
-
-`games/batman-arkham-city/`
-
-Individual game directories may contain:
-
-- User-facing workaround instructions
-- Helper scripts when required
-- Technical investigation notes
-- Upstream references
-- Validation information
+Game directories under `games/` may contain user-facing instructions,
+validation results, technical investigation notes, upstream/community
+references, and helper scripts where required. Contents vary by game entry.
+The root `LICENSE` applies to this repository's original material.
 
 ## Scope
 
-This repository focuses on game compatibility with **native Steam / Proton / FEX on Armada OS**.
+- Native Steam / Proton / FEX on Armada OS.
+- Real-device testing on ARM64 handhelds, with the tested devices and limits documented.
+- No universal compatibility guarantee.
+- Performance optimization is not implied unless explicitly documented.
 
-A listed workaround means it was tested on the devices shown in the table. It does not guarantee identical behavior on every ARM64 device or future Armada OS release.
-
-Performance optimization is outside the scope unless explicitly documented for a specific game.
+Read the relevant game entry before applying a workaround. Upstream knowledge
+and project-specific findings are attributed separately in each entry.
 
 ## License
 
-Original utilities and documentation in this repository are released under the MIT License unless otherwise noted.
+[MIT License](LICENSE) — Copyright (c) 2026 SimonBits.
+Upstream software, documentation, and game assets retain their respective rights and licenses.
