@@ -19,7 +19,7 @@ Each game entry records:
 | Game | Steam App ID | Issue | Status | Validated Devices | Source |
 | --- | ---: | --- | --- | --- | --- |
 | [Batman: Arkham City GOTY](games/batman-arkham-city/) | 200260 | AMD prerequisite hang + x87 startup crash | Workaround available | AYN Odin 3, Retroid Pocket 6 | Investigation + upstream |
-| [Slay the Spire 2](games/slay-the-spire-2/) | 2868840 | Native Linux/CoreCLR startup crash under FEX | Workaround available | AYN Odin 3, Retroid Pocket 6 | Investigation + upstream |
+| [Slay the Spire 2](games/slay-the-spire-2/) | 2868840 | Native Linux/CoreCLR startup crash under FEX | Workaround available | AYN Odin 3, Retroid Pocket 6, Retroid Pocket Nova (user report) | Investigation + upstream |
 | [Silent Hill 2 Enhanced Edition](games/silent-hill-2-enhanced-edition/) | Non-Steam | Non-Steam launch / DLL override configuration | Working configuration | AYN Odin 3 | Armada validation |
 
 The **Source** field distinguishes:

@@ -1,7 +1,7 @@
 # Slay the Spire 2 on Armada OS
 
 Steam App ID: **2868840**. A startup workaround was independently validated
-on **AYN Odin 3** and **Retroid Pocket 6** running Armada OS.
+by the maintainer on **AYN Odin 3** and **Retroid Pocket 6** running Armada OS.
 
 ## Observed problem
 
@@ -35,7 +35,7 @@ game's launch options, preserving the Armada wrapper and other options.
 
 `DOTNET_EnableWriteXorExecute=0` was tested as a single-variable workaround.
 Changing CoreCLR executable-memory behavior avoided the observed startup
-failure on both tested devices. The evidence is consistent with a CoreCLR/FEX
+failure on both maintainer-tested devices. The evidence is consistent with a CoreCLR/FEX
 compatibility problem; the underlying defect has not been conclusively
 identified. Successful Vulkan and FMOD initialization does not rule out all
 later graphics or audio problems.
@@ -52,8 +52,14 @@ and variable-use precedent remains with their contributors; see
 
 | Device | Reported validation |
 | --- | --- |
-| AYN Odin 3 | Startup workaround validated successfully |
-| Retroid Pocket 6 | Startup workaround independently validated successfully |
+| AYN Odin 3 | Maintainer validation: startup workaround validated successfully |
+| Retroid Pocket 6 | Maintainer validation: startup workaround independently validated successfully |
+| Retroid Pocket Nova | Community/user report: existing workaround resolved the startup issue |
+
+A Retroid Pocket Nova user who encountered the startup problem reported that
+`DOTNET_EnableWriteXorExecute=0` resolved it. This result was not independently
+tested by the repository maintainer. The report establishes no additional
+validation beyond the user's reported startup success.
 
 These results are the testers' reported observations, not new device tests
 performed while preparing this entry. No gameplay duration, benchmark, or
