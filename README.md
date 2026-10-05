@@ -10,8 +10,8 @@ the original sources.
 Each game entry records:
 
 - The observed compatibility problem.
-- The tested workaround.
-- The validation devices.
+- Any tested workaround, or the remaining unresolved blockers.
+- The validation devices, or explicitly identified investigation-only devices.
 - Known limitations.
 
 ## Games
@@ -21,9 +21,16 @@ Each game entry records:
 | [Batman: Arkham City GOTY](games/batman-arkham-city/) | 200260 | AMD prerequisite hang + x87 startup crash | Workaround available | AYN Odin 3, Retroid Pocket 6 | Investigation + upstream |
 | [Slay the Spire 2](games/slay-the-spire-2/) | 2868840 | Native Linux/CoreCLR startup crash under FEX | Workaround available | AYN Odin 3, Retroid Pocket 6, Retroid Pocket Nova (user report) | Investigation + upstream |
 | [Silent Hill 2 Enhanced Edition](games/silent-hill-2-enhanced-edition/) | Non-Steam | Non-Steam launch / DLL override configuration | Working configuration | AYN Odin 3 | Armada validation |
+| [NBA 2K27](games/nba-2k27/) | 4356430 | RDTSCP startup blocker experimentally resolved; severe rendering flicker unresolved | Not playable — upstream pending | No playable configuration validated; investigated on AYN Odin 3 | Original investigation |
+
+**Not playable — upstream pending** identifies an evidence-backed unresolved
+investigation with submitted upstream reports and no validated playable
+configuration. It does not imply upstream acceptance of a diagnosis or fix.
+Investigation-only devices in the table are not validated playable devices.
 
 The **Source** field distinguishes:
 
+- **Original investigation**: original evidence-backed investigation; the problem may remain unresolved and no working workaround is implied.
 - **Investigation + upstream**: the Armada-specific problem was investigated and the workaround integrated here; relevant existing upstream knowledge is credited in the game entry.
 - **Upstream/community workaround, Armada validated**: the workaround already existed elsewhere; this repository records independent real-device validation on Armada OS and credits the original source.
 - **Armada validation**: a working configuration independently tested on Armada; no original upstream bug/fix discovery is claimed.

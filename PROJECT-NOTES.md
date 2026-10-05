@@ -27,10 +27,20 @@ For a new game:
 9. Submit useful findings upstream/community where appropriate.
 10. Add the validated result to this repository.
 
+Evidence-backed unresolved investigations also belong here when reproducible
+observations and their limits are documented; a successful workaround is not
+required. Use `Not playable — upstream pending` when no playable configuration
+has been validated and investigation reports have been submitted upstream,
+with resolution pending. This implies no upstream endorsement or promised fix.
+
 ## Evidence rules
 
 Only list a device under `Validated Devices` if the workaround/configuration
 was actually tested on that device.
+
+For unresolved entries, the device field must explicitly say that no playable
+configuration was validated and identify any device as investigation-only.
+Investigating a failure on a device does not establish successful compatibility.
 
 Planned testing does not count as validation.
 
