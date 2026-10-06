@@ -83,6 +83,22 @@ startup fault did not recur, and shader compilation/later graphics stages
 were reached. This is not a claim that every later `C000001D` log entry
 disappeared or that the game became playable.
 
+### Upstream direction
+
+After FEX #6009 was submitted, a FEX maintainer clarified that the intended
+long-term ARM64EC solution is to expose the core index through `TPIDRRO_EL0`
+with Linux kernel support. Once that kernel support exists, wiring it into
+FEX should be straightforward.
+
+The API-backed ProcessorID implementation used in this investigation should
+therefore be treated as a proof of concept. It validated the ProcessorID
+hypothesis and allowed NBA2K27.exe to cross the original RDTSCP fault, but it
+is not the intended upstream implementation.
+
+Further NBA 2K27 game-level validation is not currently available because the
+test copy of the game was refunded. The standalone probes and existing evidence
+remain available in FEX #6009.
+
 ## Rendering: confirmed symptoms and evidence limits
 
 The confirmed path was **D3D12 → VKD3D-Proton → Wine Vulkan →
