@@ -23,6 +23,7 @@ Each game entry records:
 | [Silent Hill 2 Enhanced Edition](games/silent-hill-2-enhanced-edition/) | Non-Steam | Non-Steam launch / DLL override configuration | Working configuration | AYN Odin 3 | Armada validation |
 | [NBA 2K27](games/nba-2k27/) | 4356430 | RDTSCP startup blocker experimentally resolved; severe rendering flicker unresolved | Not playable — upstream pending | No playable configuration validated; investigated on AYN Odin 3 | Original investigation |
 | [The Witcher 3: Wild Hunt](games/the-witcher-3-wild-hunt/) | 292030 | DX12 startup failure on some ARM64 devices | Workaround confirmed (3 user reports) | Retroid Pocket 6 (author tested); AYN Odin 3 (third-party report) | Armada validation |
+| [Stellar Blade](games/stellar-blade/) | 3489700 | LSFG 2× startup crash with present-timing extension; later frame-generation artifacts | Startup workaround available; LSFG stability unverified | AYN Odin 3 | Original investigation |
 
 **Not playable — upstream pending** identifies an evidence-backed unresolved
 investigation with submitted upstream reports and no validated playable
